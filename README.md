@@ -11,6 +11,13 @@ Bekijk het voorbeelddocument voor inspiratie, en een zicht op de mogelijkheden:
 - [HOGENT-voorbeeld-wit.pdf](HOGENT-voorbeeld-wit.pdf): resultaat, witte achtergrond
 - [HOGENT-voorbeeld-zwart.pdf](HOGENT-voorbeeld-zwart.pdf): resultaat, zwarte achtergrond
 
+## Compile to pdf
+
+```bash
+xelatex HOGENT-voorbeeld.tex 
+```
+
+
 ## Kleuren
 
 Er zijn twee kleurenschema's voorzien:
