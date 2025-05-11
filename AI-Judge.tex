@@ -25,6 +25,9 @@
 
 %\usepackage{animate} % GIFS
 \usepackage{media9}
+\usepackage{fontspec}
+\usepackage{multimedia} % Use multimedia instead of media9
+
 
 
 %---------- Commando-definities -----------------------------------------------
@@ -47,7 +50,7 @@
 
 {
 \setbeamertemplate{background}[imgletter]
-    {dd3-boxes-2.jpg}{H}
+    {dd3-boxes-dark.jpg}{H}
 
 \begin{frame}
     \maketitle
@@ -70,18 +73,31 @@
 
 \end{frame}
 
-\begin{frame}
-  \frametitle{Comparing routines - GIFS}
+\begin{frame}{Video example}
+  % \frametitle{Comparing routines - GIFS}
 
-  \includegraphics[height=4cm]{dd3-boxes.jpg}
-  \includegraphics[height=4cm]{dd3-split.jpg}
+  % \movie[width=0.8\linewidth,height=0.6\linewidth,poster,autostart]{Click to play}{sr2-zoe-elena.mov}
+  % \includemedia[
+  %     activate=pageopen,
+  %     width=0.8\linewidth,
+  %     height=0.6\linewidth,
+  %     addresource=graphics/2024-dd3-sipiro-maud.mp4,
+  %     flashvars={source=graphics/2024-dd3-sipiro-maud.mp4}
+  % ]{}{VPlayer.swf}
+
+  \href{run:1315_annotated.mp4}{Click to play the video}
+
+  
+  % \includegraphics[height=4cm]{dd3-boxes.jpg}
+  % \includegraphics[height=4cm]{dd3-split.jpg}
 
 \end{frame}
 
 \begin{frame}
   \frametitle{Judges}
-
-  \includegraphics[width=0.9\linewidth]{judges-cine.jpg}
+  \vspace{-1cm}
+  \includegraphics[width=0.9\linewidth]{judges}
+  
   % TODO : add cine diffusion link if kept
 \end{frame}
 
