@@ -27,7 +27,7 @@
 \usepackage{media9}
 \usepackage{fontspec}
 \usepackage{multimedia} % Use multimedia instead of media9
-
+\usepackage{hyperref}
 
 
 %---------- Commando-definities -----------------------------------------------
@@ -73,17 +73,17 @@
 
 \end{frame}
 
-\begin{frame}
-  \frametitle{Comparing routines - GIFS}
+% \begin{frame}
+%   \frametitle{Comparing routines}
 
-  \includegraphics[height=4cm]{dd3-boxes.jpg}
-  \includegraphics[height=4cm]{dd3-split.jpg}
+%   \includegraphics[height=4cm]{dd3-boxes.jpg}
+%   \includegraphics[height=4cm]{dd3-split.jpg}
 
-\end{frame}
+% \end{frame}
 
 \begin{frame}
   \frametitle{Judges}
-  \vspace{-1cm}
+  \vspace{-1.5cm}
   \includegraphics[width=0.9\linewidth]{judges}
   
   % TODO : add cine diffusion link if kept
@@ -98,7 +98,7 @@
   \begin{columns}[c]
   
     \column{.55\textwidth}
-    \includegraphics[width=0.9\linewidth]{dd3-1h-hfrog-toad-bw-crouger}
+    \hspace{0.2cm} \includegraphics[width=0.85\linewidth]{dd3-1h-hfrog-toad-bw-crouger}
 
     \column{.45\textwidth}
     Base skill level \\
@@ -117,10 +117,11 @@
 
   \begin{columns}[c]
   
-    \column{.65\textwidth}
-    \includegraphics[width=0.9\linewidth]{label-video}
+    \column{.75\textwidth}
+    \includegraphics[width=1.0\linewidth]{label-video}
 
-    \column{.35\textwidth}
+    \column{.25\textwidth}
+    \vspace{-1.0cm}
     \begin{enumerate}
       \item localize
       \item segment
@@ -133,13 +134,52 @@
 \begin{frame}
   \frametitle{AI Judge assistant}
 
-  \includegraphics[width=0.8\linewidth]{flow}
+  \begin{columns}[c]
+    \column{.33\textwidth}
+    \centering{Localize}
+    \column{.33\textwidth}
+    \centering{Segment}
+    \column{.33\textwidth}
+    \centering{Recognize}
+  \end{columns}
+
+  \begin{columns}[c]
+  
+    \column{.33\textwidth}
+    \begin{center}
+      \includegraphics[width=0.8\linewidth]{ai-judge-localize-crop}
+    \end{center}
+    
+    \column{.33\textwidth}
+    \begin{center}
+      \includegraphics[width=1.0\linewidth]{ai-judge-segment-plot}
+    \end{center}
+    % \vspace{0.kcm}
+    \begin{center}
+      \includegraphics[width=0.8\linewidth]{ai-judge-segments}
+    \end{center}
+
+    \column{.33\textwidth}
+    
+    \begin{center}
+        cartwheel \\
+        handstand \\
+        2 rotations \\
+        1 hand \\
+        2 feet \\
+        ... 
+    \end{center}
+      
+  \end{columns}
+
 
 \end{frame}
 
 \begin{frame}{Video example}
-
-  \href{run:1315_annotated.mp4}{Click to play the video}
+  \includegraphics[width=0.6\linewidth]{dd3-predicted-skill} 
+  
+  \href{run:dd3-annotated.mp4}{\beamergotobutton{Click to play the video}}
+% \pdfcatalog{/OpenAction << /S /JavaScript /JS (app.openURI('file:./dd3-annotated.mp4', 'newWindow');) >>}
 
 \end{frame}
 
