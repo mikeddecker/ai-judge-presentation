@@ -22,7 +22,7 @@
 
 %% Use the length of the 'HO' part of the logo to set the padding of the logo
 \newsavebox{\logopart}
-\savebox{\logopart}{\includegraphics[height=1cm]{graphics/logopart}}
+\savebox{\logopart}{\includegraphics[height=0.7cm]{graphics/logopart}}
 
 %% Footer: pagenumber on the left, logo right
 \setbeamertemplate{footline}{%
@@ -37,7 +37,9 @@
     \node [anchor=south east, shift={(-\the\wd\logopart, \the\wd\logopart)},
     inner sep=0, outer sep=0] (logo) at (current page.south east)%
     {%
-        \includegraphics[height=\the\ht\logopart]{hogent_logo_white}%
+    \includegraphics[height=\the\ht\logopart]{hogent_logo_white}%
+    \hspace{0.1cm}
+    \includegraphics[height=\the\ht\logopart]{TNC25-logo-website}%
     };%
     \end{tikzpicture}
   \end{beamercolorbox}

@@ -178,8 +178,16 @@
 \begin{frame}{Video example}
   \includegraphics[width=0.6\linewidth]{dd3-predicted-skill} 
   
+  % \href{run:dd3-annotated.mp4}{\beamergotobutton{Click to play the video}}
+  % \pdfcatalog{/OpenAction << /S /JavaScript /JS (app.openURI('file:./dd3-annotated.mp4', 'newWindow');) >>}
+  
+  \hypertarget{autoplay}{} % A dummy target
   \href{run:dd3-annotated.mp4}{\beamergotobutton{Click to play the video}}
-% \pdfcatalog{/OpenAction << /S /JavaScript /JS (app.openURI('file:./dd3-annotated.mp4', 'newWindow');) >>}
+
+  % JavaScript to auto-trigger the click
+  \pdfstringdefDisableCommands{%
+    \def\insertbuttonlink{\JavaScript{app.launchURL("dd3-annotated.mp4", true);}}%
+  }
 
 \end{frame}
 
